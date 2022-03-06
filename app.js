@@ -21,13 +21,15 @@ const params = {
     ijn: "0"
   };
 
-search.json(params, callback);
-
-const callback = async function(data) {
+  const callback = async function(data) {
     x = data['images_results'][0]
     console.log(x);
     return x;
 };
+
+search.json(params, callback);
+
+
 
 
 
