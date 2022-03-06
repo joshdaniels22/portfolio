@@ -14,7 +14,7 @@ app.get("", (req, res) => {
     //console.log(path.join(__dirname, '/index.html'))
     //console.log(__dirname+ '/index.html')
     // res.send(__dirname+ '/index.html')
-    res.sendFile('/app/index.html');
+    res.sendFile('index.html');
     // res.send("Hello Lauren");
 })
 
