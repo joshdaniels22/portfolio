@@ -12,22 +12,22 @@ app.get("", (req, res) => {
 })
 
 // Search API
-const SerpApi = require('google-search-results-nodejs');
-const search = new SerpApi.GoogleSearch("3cb2c54d231f24b4fa958a59bcee6f15a038aad59937532b5957d8515747d458");
+// const SerpApi = require('google-search-results-nodejs');
+// const search = new SerpApi.GoogleSearch("3cb2c54d231f24b4fa958a59bcee6f15a038aad59937532b5957d8515747d458");
 
-const params = {
-    q: "Apple",
-    tbm: "isch",
-    ijn: "0"
-  };
+// const params = {
+//     q: "Apple",
+//     tbm: "isch",
+//     ijn: "0"
+//   };
 
-  const callback = async function(data) {
-    x = data['images_results'][0]
-    console.log(x);
-    return x;
-};
+//   const callback = async function(data) {
+//     x = data['images_results'][0]
+//     console.log(x);
+//     return x;
+// };
 
-search.json(params, callback);
+// search.json(params, callback);
 
 
 
