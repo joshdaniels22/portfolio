@@ -16,7 +16,7 @@ app.get("", (req, res) => {
     // res.send(__dirname+ '/index.html')
     console.log("helllllooooo")
     // res.sendFile('index.html');
-    res.send("Hello Lauren");
+    res.send(__dirname+ '/index.html');
 })
 
  app.listen(PORT, async () =>  {
