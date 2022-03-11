@@ -10,11 +10,11 @@ const params = {
   };
 
 app.get("", (req, res) => {
-    //search.json(params, callback);
+    search.json(params, callback);
     //console.log(path.join(__dirname, '/index.html'))
     //console.log(__dirname+ '/index.html')
-    // res.send(__dirname+ '/index.html')
-    res.sendFile('index.html');
+    res.send(__dirname+ '/index.html')
+    // res.sendFile('index.html');
     // res.send("Hello Lauren");
 })
 
