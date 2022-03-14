@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sample Site</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Josh's Portfolio</title>
   <style>
     body { padding-top: 50px; }
   </style>
@@ -13,8 +12,31 @@
   <div class="container">
     <div class="jumbotron">
       <h1>res.sendFile() Works!</h1>
+      <img id="api-output">
+      <script>
+        const SerpApi = require('google-search-results-nodejs');
+        const search = new SerpApi.GoogleSearch("3cb2c54d231f24b4fa958a59bcee6f15a038aad59937532b5957d8515747d458");
+
+        const params = {
+            q: "cats",
+            tbm: "isch",
+            ijn: "0"
+          };
+
+        search.json(params, callback);
+        a = document.getElementById('api-output');
+
+        const callback = function(data) {
+            displayPic(data['images_results'][4]);
+        };
+
+        function displayPic(entry){
+            a.href = entry['original']
+        }
+      </script>
     </div>
   </div>
     
 </body>
 </html>
+

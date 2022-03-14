@@ -1,0 +1,13 @@
+Courses and Tutorials
+---------------------
+
+1. Git for professionals (finish Sunday 13 March)
+2. Advanced Git (finish Sunday 13 March)
+3. DevOps with Gitlab (finish in the evenings over the week starting Monday 14 March)
+4. 50 Most Popular linux commands
+5. Python Automation
+
+Projects
+--------
+
+1. Personal portfolio
